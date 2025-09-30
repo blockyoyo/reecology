@@ -18,11 +18,14 @@
   display: flex;
   flex-direction: column;
   background-color: #d6d3d1;
+  overflow: hidden;
 }
 
 .create__image {
   width: 100%;
   height: 950px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .create__text-column {
@@ -95,20 +98,58 @@
     width: 100%;
   }
 
+  .create__image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+  }
+
+  .create__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
   .create__text-column {
     margin-left: 0;
     width: 100%;
   }
 
-  .create__text-wrapper {
-    padding: 6rem 1.25rem;
+  .create__text-content {
+    padding-bottom: 3rem;
   }
 
-  .create__title {
-    margin-top: 2.5rem;
+  .create__text-wrapper {
+    padding: 3rem 1.5rem;
   }
 
   .create__text-block {
-    margin-bottom: 0.625rem;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .create__appointment-text {
+    font-size: 1rem;
+  }
+
+  .create__title {
+    margin-top: 2rem;
+    font-size: 1.75rem;
+  }
+
+  .create__description,
+  .create__description-line {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .create__description-line {
+    margin-top: 0.5rem;
   }
 }

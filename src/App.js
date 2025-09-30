@@ -15,8 +15,9 @@ function App() {
       <Hero />
       <Menu />
       <About />
-      <Projects />
+      
       <Process />
+      <Projects />
       <Articles />
       <Friends />
       <Create />

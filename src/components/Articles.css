@@ -72,6 +72,7 @@
 }
 
 .tag-group {
+  padding-bottom: 2rem;
   display: flex;
   gap: 2rem;
 }

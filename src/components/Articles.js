@@ -43,7 +43,14 @@ function Articles() {
         </div>
       </div>
       <div className="tags-container">
-        <div className="tag">Stories</div>
+      <div className="tag-group">
+          <div className="author">By RE Ecology</div>
+          <div className="tag-group">
+            <div className="design-tag">Design</div>
+            <div className="materials-tag">Materials</div>
+          </div>
+
+        </div>
         <div className="tag-group">
           <div className="author">By RE Ecology</div>
           <div className="tag-group">
@@ -53,7 +60,7 @@ function Articles() {
         </div>
         <div className="tag-group">
           <div className="tag-group">
-            <div className="author">By Debank</div>
+            <div className="author">By Deboo</div>
             <div className="tag">Stories</div>
           </div>
           <div className="author">By Floor & Jikke</div>
