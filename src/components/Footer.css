@@ -1,0 +1,150 @@
+.footer {
+  width: 100%;
+  background-color: #1c1917;
+  height: 1200px;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  padding: 2.75rem 4rem;
+  width: 100%;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  align-items: flex-start;
+  padding-top: 2.75rem;
+  padding-right: 5rem;
+  width: 100%;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+@keyframes hueShiftAndScale {
+  0% {
+    filter: hue-rotate(-20deg);
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.01);
+  }
+  50% {
+    filter: hue-rotate(100deg);
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.01);
+  }
+  100% {
+    filter: hue-rotate(-20deg);
+    transform: scale(1);
+  }
+}
+
+.footer__logo {
+  position: absolute;
+  top: 0px;
+  left: 160px;
+  width: 100%;
+  animation: hueShiftAndScale 40s ease-in-out infinite;
+}
+
+.footer__tagline {
+  display: flex;
+  flex-direction: column;
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1;
+  padding-top: 40px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #a8a29e;
+  position: relative;
+}
+
+.footer__tagline-smart {
+  align-self: flex-start;
+}
+
+.footer__tagline-ecological {
+  margin-top: 0.75rem;
+  font-weight: 300;
+}
+
+.footer__tagline-solutions {
+  margin-top: 0.7rem;
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  letter-spacing: normal;
+  position: relative;
+}
+
+.footer__email {
+  font-size: 1.125rem;
+  line-height: 1.2;
+  color: #d6d3d1;
+}
+
+.footer__join {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  letter-spacing: normal;
+  color: #d6d3d1;
+  position: relative;
+}
+
+.footer__join-text {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  line-height: 1;
+}
+
+.footer__divider {
+  display: flex;
+  flex-shrink: 0;
+  height: 1px;
+  border-bottom: 1px solid #27272a;
+  margin-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+  .footer__container {
+    padding-left: 1.25rem;
+  }
+
+  .footer__content {
+    padding-right: 1.25rem;
+    padding-bottom: 6rem;
+  }
+
+  .footer__tagline {
+    font-size: 2.25rem;
+  }
+
+  .footer__tagline-ecological {
+    margin-right: 0.625rem;
+  }
+
+  .footer__contact {
+    margin-top: 2.5rem;
+  }
+
+  .footer__join {
+    margin-top: 2.5rem;
+  }
+
+  .footer__join-text {
+    margin-right: 0.5rem;
+  }
+}

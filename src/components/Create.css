@@ -1,0 +1,114 @@
+.create {
+  width: 100%;
+  background-color: #84cc16;
+  padding-bottom: 0%;
+}
+
+.create__content {
+  display: flex;
+}
+
+.create__image-column {
+  display: flex;
+  flex-direction: column;
+  width: 57%;
+}
+
+.create__image-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #d6d3d1;
+}
+
+.create__image {
+  width: 100%;
+  height: 950px;
+}
+
+.create__text-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.25rem;
+  width: 43%;
+}
+
+.create__text-content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 6rem;
+  width: 100%;
+  font-size: 1.5rem;
+  color: #f4f4f5;
+}
+
+.create__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 5rem;
+}
+
+.create__text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0;
+  max-width: 100%;
+  width: 397px;
+}
+
+.create__appointment-text {
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+.create__title {
+  align-self: stretch;
+  margin-top: 11rem;
+  font-size: 2.25rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.create__description {
+  margin-top: 2.5rem;
+  letter-spacing: 0.025em;
+  line-height: 1;
+}
+
+.create__description-line {
+  margin-top: 0.625rem;
+  letter-spacing: 0.025em;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .create__content {
+    flex-direction: column;
+  }
+
+  .create__image-column {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .create__text-column {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .create__text-wrapper {
+    padding: 6rem 1.25rem;
+  }
+
+  .create__title {
+    margin-top: 2.5rem;
+  }
+
+  .create__text-block {
+    margin-bottom: 0.625rem;
+  }
+}
