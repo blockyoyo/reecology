@@ -15,7 +15,6 @@ function App() {
       <Hero />
       <Menu />
       <About />
-      
       <Process />
       <Projects />
       <Articles />
